@@ -14,7 +14,7 @@ export class User {
   }
 
   changeEmail(newEmail: string): void {
-    if (!this.isValidEmail(newEmail)) { throw new Error("Invalid email format") }
+    if (!this.isValidEmail(newEmail)) { throw new Error("INVALID_EMAIL") }
     this._user.email = newEmail
   }
 
