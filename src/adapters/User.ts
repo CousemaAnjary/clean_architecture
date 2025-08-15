@@ -18,7 +18,5 @@ export class User {
     this._user.email = newEmail
   }
 
-  get id(): string {
-    return this._user.id
-  }
+  get email(): string { return this._user.email }
 }
