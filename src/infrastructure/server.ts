@@ -5,7 +5,7 @@ import { serve } from "@hono/node-server"
 const app = new Hono()
 
 
-app.get("/health", (c) => c.json({ ok: true }))
+app.get("/", (c) => c.json({ ok: true, message: "Hello, world!" }))
 
 serve(
   {
