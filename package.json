@@ -2,9 +2,10 @@
   "name": "clean",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx src/infrastructure/server.ts"
   },
   "repository": {
     "type": "git",
@@ -13,17 +14,21 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/CousemaAnjary/clean_architecture/issues"
   },
   "homepage": "https://github.com/CousemaAnjary/clean_architecture#readme",
   "devDependencies": {
+    "@hono/node-server": "^1.18.2",
     "@types/node": "^24.3.0",
     "ts-node": "^10.9.2",
+    "tsx": "^4.20.4",
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "dotenv": "^17.2.1"
+    "dotenv": "^17.2.1",
+    "hono": "^4.9.2",
+    "zod": "^4.0.17"
   }
 }
